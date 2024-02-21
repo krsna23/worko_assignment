@@ -1,0 +1,29 @@
+<section class="login-section">
+    <div class="login-col">
+        <h2 class="title" *ngIf="login">Login </h2>
+        <h2 class="title" *ngIf="signup">Signup </h2>
+      </div>
+      <div class="login-container">
+        <form [formGroup]="login ? loginForm : signupForm" (ngSubmit)="login ? loginSubmit() : signupSubmit()">
+          <div class="input-row">
+            <label for="email" class="label">Email:</label>
+            <input type="text" class="input" placeholder="Email" formControlName="email">
+          </div>
+          <div class="input-row">
+            <label for="password" class="label">Password:</label>
+            <input type="password" class="input" placeholder="Password" formControlName="password">
+          </div>
+          <div class="input-row" *ngIf="signup">
+            <label for="confirmPassword" class="label">Confirm Password:</label>
+            <input type="password" class="input" placeholder="Confirm Password" formControlName="confirmPassword">
+          </div>
+          <div class="input-row" *ngIf="signup">
+            <label for="phNumber" class="label">Contact Number:</label>
+            <input type="text" class="input" placeholder="Ph Number" formControlName="phNumber">
+          </div>
+          <button type="submit" class="primary-button" *ngIf="login" routerLink="/candidate/home">Login</button>
+          <button type="submit" class="primary-button" *ngIf="signup" routerLink="/candidate/home">Sign up</button>
+        </form>
+        <p class="info" *ngIf="login">Don't have an account? <button class="signup-button pointer" (click)="signupClicked()">Sign up!</button></p>
+      </div>
+</section>

@@ -1,0 +1,22 @@
+<section>
+    <div class="navbar flex">
+        <div class="logo flex" routerLink="/">
+            <img src="./././assets/logo.png" alt="Logo" class="logo-image">
+        </div>
+    
+        <ul class="navs flex">
+            <li class="nav">
+                <input type="text" class="search-box" placeholder="Search" #search>
+                <i class="fa-solid fa-magnifying-glass pointer" ></i>
+            </li>
+            <li class="nav menu" routerLink="/login">
+                <i class="fa-solid fa-user"></i>
+                Candidate Home
+            </li>
+            <!-- <li class="nav menu">Donate Toy</li> -->
+            <li class="nav">
+                <button class="primary-button" (click)="loginClick()" routerLink="/login">Login</button>
+            </li>
+        </ul>
+    </div>
+</section>

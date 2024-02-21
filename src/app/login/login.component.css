@@ -1,0 +1,67 @@
+.login-section{
+    text-align: center;
+    background-color: var(--primary-color);
+    height: 90vh;
+}
+
+h2{
+    font-size: 25px;
+    padding-top: 45px;
+    color: #fff;
+}
+
+.logo{
+    width: 22px;
+}
+
+.login-container{
+    width: 350px;
+    height: 320px;
+    margin: 0 auto;
+    /* background-color: 
+        var(--background-color2); */
+    background-color: white;
+}
+
+form{
+    padding-top: 40px;
+    position: relative;
+    margin-top: 20px;
+}
+.input-row{
+    padding: 8px;
+}
+
+.label{
+    left: 50px;
+    position: absolute;
+    padding-top: 8px;
+}
+
+.input{
+    padding-left: 15px;
+    margin: 0 auto;
+    border: oklab(lightness a b);
+    height: 25px;
+    padding-bottom: 2px;
+}
+
+.primary-button{
+    margin-top: 20px;
+}
+
+p{
+    padding-top: 50px;
+}
+
+.signup-button{
+    border: none;
+    background-color: transparent;
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+.label{
+    display: none;
+}
